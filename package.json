@@ -1,0 +1,67 @@
+{
+  "name": "primetimeapi",
+  "version": "1.0.0",
+  "description": "is this a prime number as an api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/samantharachelb/primetimeapi.git"
+  },
+  "keywords": [
+    "isprime",
+    "prime numbers"
+  ],
+  "author": {
+    "name": "Samantha Emily-Rachel Belnavis",
+    "email": "me@samantharachelb.ca"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samantharachelb/primetimeapi/issues"
+  },
+  "homepage": "https://github.com/samantharachelb/primetimeapi/#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "css-loader": "^3.4.2",
+    "fibers": "^4.0.2",
+    "file-loader": "^5.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.26.2",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "@babel/runtime": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.4.1",
+    "chalk": "^3.0.0",
+    "dot-env": "0.0.1",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.1",
+    "highlight.js": "^9.18.1",
+    "jquery": "^3.4.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-persist": "^3.0.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^1.1.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "webmanifest-loader": "^0.3.0"
+  }
+}
