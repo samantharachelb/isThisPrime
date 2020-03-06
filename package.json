@@ -4,7 +4,7 @@
   "description": "is this a prime number as an api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api:dev": "nodemon --exec babel-node api/index.js"
   },
   "repository": {
     "type": "git",
@@ -54,6 +54,8 @@
     "express-rate-limit": "^5.1.1",
     "highlight.js": "^9.18.1",
     "jquery": "^3.4.1",
+    "lodash.includes": "^4.3.0",
+    "mathjs": "^6.6.1",
     "mini-css-extract-plugin": "^0.9.0",
     "node-persist": "^3.0.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
