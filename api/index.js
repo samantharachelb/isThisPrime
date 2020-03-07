@@ -28,6 +28,28 @@ app.use(
 app.get('/*', (req, res) => {
     const input = decodeURI(req.originalUrl.substr(1)).trim();
 
+    if (!input.match(/^\d+$/)) {
+        return res.json({
+            status: 400,
+            message: "That's not a number."
+        })
+    } else if (input.length > 17) {
+        return res.json({
+            status: 413,
+            message: "You've entered /way/ too many numbers"
+        });
+    } else if (input > Number.MAX_SAFE_INTEGER) {
+        return res.json({
+            status: 413,
+            message: "Integers shouldn't be larger than the MAX_SAFE_INTEGER"
+        })
+    } else if (input < Number.MIN_SAFE_INTEGER) {
+        return res.json({
+            status: 413,
+            message: "The number shouldn't be smaller than the MIN_SAFE_INTEGER"
+        })
+    }
+    
     isPrime(input)
         .then(state => {
             res.json({status: 200, input, state})
