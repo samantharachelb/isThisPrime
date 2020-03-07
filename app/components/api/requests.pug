@@ -1,0 +1,14 @@
+.container
+    h3
+        span Making a request
+
+    p Make a <code>GET</code> request to <code>https://spaceburrito.xyz/isthisprime/{number}</code>
+
+    pre
+        code.double.
+            fetch('https://api.spaceburrito.xyz/isthisprime/69').then(function(res) {
+                console.log(res.numberType);
+                // odd
+            });
+    <br />
+    <br />
