@@ -4,7 +4,11 @@
   "description": "is this a prime number as an api",
   "main": "index.js",
   "scripts": {
-    "api:dev": "nodemon --exec babel-node api/index.js"
+    "api:build": "babel api -d dist/api",
+    "api:dev": "nodemon --exec babel-node api/index.js",
+    "api:serve": "npm run api:build && pm2 start dist/api/index.js --name isThisPrime",
+    "app:build": "webpack --config webpack_prod.js --progress --hide-modules",
+    "app:dev": "webpack-dev-server --config webpack_dev.js"
   },
   "repository": {
     "type": "git",
