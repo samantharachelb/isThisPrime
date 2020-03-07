@@ -10,8 +10,8 @@ Use the free API in your app. Why? Because you're a goddamn 10x developer. That'
 Make a `GET` request to `https://spaceburrito.xyz/isthisprime/{number}`
 ```js
 fetch('https://api.spaceburrito.xyz/isthisprime/69').then(function(res) {
-    console.log(res.numberType);
-    // odd
+    console.log(res.state);
+    // not prime
 });
 ```
 
